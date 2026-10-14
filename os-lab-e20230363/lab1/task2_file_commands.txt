@@ -1,0 +1,11 @@
+/home/gic-huong-phynann/oslab-work/lab1/task2_files
+river.txt
+tiger.txt
+This is file river
+This is file tiger
+river.txt
+river_copy.txt
+tiger.txt
+river.txt
+river_copy.txt
+tiger_renamed.txt
