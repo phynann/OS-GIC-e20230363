@@ -1,0 +1,18 @@
+                    USER SPACE
+    Shell / commands: gcc, cat, uname, lsmod, modinfo
+    Activity programs: file_creator_{lib,sys}, file_reader_{lib,sys},
+                       dir_list_{lib,sys}
+                         |
+                         | open(), read(), write(), close()
+                         v
+             SYSTEM CALL INTERFACE
+                         |
+                         v
+    KERNEL: Linux 7.1.9-arch1-2 (x86_64)
+    Loaded modules: snd_seq_dummy, snd_hrtimer, rfcomm
+    /proc exposes kernel-maintained system and process information
+                         |
+                         v
+                     HARDWARE
+    CPU: Intel(R) Core(TM) i9-14900HX
+    Memory: 32,552,160 kB total (from /proc/meminfo)

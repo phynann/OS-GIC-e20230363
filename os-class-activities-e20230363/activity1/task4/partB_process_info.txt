@@ -1,0 +1,63 @@
+### /proc/self/status (first 20 lines)
+Name:	head
+Umask:	0022
+State:	R (running)
+Tgid:	8770
+Ngid:	0
+Pid:	8770
+PPid:	8764
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	64
+Groups:	966 983 992 998 1000 
+NStgid:	8770
+NSpid:	8770
+NSpgid:	8764
+NSsid:	8764
+Kthread:	0
+VmPeak:	    6028 kB
+VmSize:	    6028 kB
+VmLck:	       0 kB
+
+### /proc/self/maps (first 20 lines)
+563cef21f000-563cef221000 r--p 00000000 103:02 1065817                   /usr/bin/head
+563cef221000-563cef229000 r-xp 00002000 103:02 1065817                   /usr/bin/head
+563cef229000-563cef22c000 r--p 0000a000 103:02 1065817                   /usr/bin/head
+563cef22c000-563cef22d000 r--p 0000c000 103:02 1065817                   /usr/bin/head
+563cef22d000-563cef22e000 rw-p 0000d000 103:02 1065817                   /usr/bin/head
+563d200df000-563d20100000 rw-p 00000000 00:00 0                          [heap]
+7fb42f600000-7fb42f8ed000 r--p 00000000 103:02 1127288                   /usr/lib/locale/locale-archive
+7fb42fa00000-7fb42fa24000 r--p 00000000 103:02 1051651                   /usr/lib/libc.so.6
+7fb42fa24000-7fb42fb9f000 r-xp 00024000 103:02 1051651                   /usr/lib/libc.so.6
+7fb42fb9f000-7fb42fc15000 r--p 0019f000 103:02 1051651                   /usr/lib/libc.so.6
+7fb42fc15000-7fb42fc19000 r--p 00214000 103:02 1051651                   /usr/lib/libc.so.6
+7fb42fc19000-7fb42fc1b000 rw-p 00218000 103:02 1051651                   /usr/lib/libc.so.6
+7fb42fc1b000-7fb42fc23000 rw-p 00000000 00:00 0 
+7fb42fd94000-7fb42fd99000 rw-p 00000000 00:00 0 
+7fb42fd99000-7fb42fdcd000 r--p 00000000 103:02 20055047                  /etc/ld.so.cache
+7fb42fdcd000-7fb42fdd1000 r--p 00000000 00:00 0                          [vvar]
+7fb42fdd1000-7fb42fdd3000 r--p 00000000 00:00 0                          [vvar_vclock]
+7fb42fdd3000-7fb42fdd5000 r-xp 00000000 00:00 0                          [vdso]
+7fb42fdd5000-7fb42fdd6000 r--p 00000000 103:02 1051640                   /usr/lib/ld-linux-x86-64.so.2
+7fb42fdd6000-7fb42fe03000 r-xp 00001000 103:02 1051640                   /usr/lib/ld-linux-x86-64.so.2
+
+### /proc/self/cmdline
+tr \0   
+
+### ps aux (first 15 lines)
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.0  20292 14636 ?        Ss   18:57   0:00 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    18:57   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    18:57   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   18:57   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   18:57   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   18:57   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   18:57   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   18:57   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   18:57   0:00 [kworker/0:0H-kblockd]
+root          11  0.0  0.0      0     0 ?        I    18:57   0:00 [kworker/0:1-events]
+root          12  0.0  0.0      0     0 ?        I    18:57   0:00 [kworker/u128:0-i915]
+root          13  0.0  0.0      0     0 ?        I<   18:57   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.7  0.0      0     0 ?        I    18:57   0:05 [kworker/u128:1-i915]
+root          15  0.0  0.0      0     0 ?        S    18:57   0:00 [ksoftirqd/0]
