@@ -124,18 +124,6 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 <!-- IMPORTANT: Highlight/annotate the key system calls in your screenshot -->
 ![strace - System call version File Creator](screenshots/strace_sys_creator.png)
 
-1.openat(AT_FDCWD, "output.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 3
-   Opens/creates the file. O_WRONLY = write only, O_CREAT = create if missing, O_TRUNC = empty it if it exists, 0644 = permissions (owner rw, others read). Returns file descriptor 3.
----
-2.write(3, "Hello from Operating Systems cla"..., 36) = 36
-   Writes 36 bytes to fd 3 (the file). Return value 36 means all bytes were written. strace truncates the printed string, but the byte count is the full length.
----
-3.close(3) = 0
-   Closes the file descriptor; 0 means success. This flushes and releases the file.
----
-4.write(1, "File created successfully!\n", 27) = 27
-   Writes to fd 1 (stdout), the terminal. This is the printf/puts message. Its text appears interleaved in the output because stdout is your terminal.
----
 ### strace Output — Library Version (File Reader or Dir Listing)
 
 ![strace - Library version](screenshots/strace_lib_reader.png)
@@ -147,8 +135,8 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 ### strace -c Summary Comparison
 
 <!-- Screenshot of `strace -c` output for both versions -->
-![strace summary - Library](screenshots/strace_summary_lib.png)
-![strace summary - Syscall](screenshots/strace_summary_sys.png)
+![strace summary - Library](screenshots/strace_compare_creator.png)
+![strace summary - reader](screenshots/compare_strace_reader.png)
 
 ### Questions
 
@@ -174,25 +162,25 @@ Screenshot of running `copyfilesyscall.c` on Linux:
 
 ### System Information
 
-> 📸 Screenshot of `uname -a`, `/proc/cpuinfo`, `/proc/meminfo`, `/proc/version`, `/proc/uptime`:
+>  Screenshot of `uname -a`, `/proc/cpuinfo`, `/proc/meminfo`, `/proc/version`, `/proc/uptime`:
 
 ![System Info](screenshots/task4_system_info.png)
 
 ### Process Information
 
-> 📸 Screenshot of `/proc/self/status`, `/proc/self/maps`, `ps aux`:
+> Screenshot of `/proc/self/status`, `/proc/self/maps`, `ps aux`:
 
 ![Process Info](screenshots/task4_process_info.png)
 
 ### Kernel Modules
 
-> 📸 Screenshot of `lsmod` and `modinfo`:
+>  Screenshot of `lsmod` and `modinfo`:
 
 ![Kernel Modules](screenshots/task4_modules.png)
 
 ### OS Layers Diagram
 
-> 📸 Your diagram of the OS layers, labeled with real data from your system:
+>  Your diagram of the OS layers, labeled with real data from your system:
 
 ![OS Layers Diagram](screenshots/task4_os_layers_diagram.png)
 
