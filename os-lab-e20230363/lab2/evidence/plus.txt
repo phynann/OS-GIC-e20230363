@@ -1,0 +1,5 @@
+Move and rename command (from mess/c):
+mv ../a/b/'lost file.txt' found.txt
+Copy command (from mess/a/b):
+cp ../../c/found.txt ../../../TechCorp/HR/found.txt
+Number of .. for the destination path: 3

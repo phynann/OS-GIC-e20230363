@@ -1,0 +1,8 @@
+/home/gic-huong-phynann/oslab-work/lab2
+/home/gic-huong-phynann/oslab-work/lab2
+../../reports/payroll may.txt
+/home/gic-huong-phynann/oslab-work/lab2/reports/payroll may.txt
+i choose relative path
+the absolute path better when we have to different directory in home parent
+Error: cat 'reports/payroll may.txt': No such file or directory
+Fix: ../../reports/payroll may.txt

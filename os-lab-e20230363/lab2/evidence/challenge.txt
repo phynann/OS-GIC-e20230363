@@ -1,0 +1,9 @@
+1. Why do quotes around `*.txt` make the command fail?
+
+   Quotes prevent the shell from expanding the wildcard. The command receives the literal string `reports/*.txt` 
+   instead of the matching filenames, so `cp` cannot find a file with that literal name.
+
+2. Does the command copy `reports/.hidden.txt`? Why?
+
+   No. The `*` wildcard does not match hidden filenames that begin with a dot (`.`) by default. Therefore, 
+  `reports/*.txt` matches ordinary `.txt` files but not `.hidden.txt`.
