@@ -1,0 +1,6 @@
+<notes/rocket12.txt>
+<notes/rocket1.txt>
+<notes/rocket2.txt>
+<notes/rocket1.txt>
+<notes/rocket2.txt>
+<notes/*.txt>

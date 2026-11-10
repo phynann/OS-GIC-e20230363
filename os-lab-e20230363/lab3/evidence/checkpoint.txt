@@ -1,0 +1,12 @@
+.:
+total 8
+19006854 -rw-rw-r-- 2 gic-huong-phynann gic-huong-phynann   23 Nov 10 17:52 lemon-final.txt
+19006853 drwxrwxr-x 2 gic-huong-phynann gic-huong-phynann 4096 Nov 10 17:55 links
+
+links:
+total 4
+19006855 lrwxrwxrwx 1 gic-huong-phynann gic-huong-phynann 18 Nov 10 17:55 first.txt -> ../lemon-final.txt
+19006854 -rw-rw-r-- 2 gic-huong-phynann gic-huong-phynann 23 Nov 10 17:52 hard.txt
+19006856 lrwxrwxrwx 1 gic-huong-phynann gic-huong-phynann  9 Nov 10 17:53 second.txt -> first.txt
+checkpoint ocean lemon
+checkpoint ocean lemon

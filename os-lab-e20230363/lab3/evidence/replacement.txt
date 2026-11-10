@@ -1,0 +1,9 @@
+
+=== NEW FILE USING THE OLD NAME ===
+18752061 -rw-rw-r-- 2 gic-huong-phynann gic-huong-phynann 12 Nov  6 07:56 rocket-draft.txt
+18752061 -rw-rw-r-- 2 gic-huong-phynann gic-huong-phynann 12 Nov  6 07:56 rocket-hard.txt
+18750549 lrwxrwxrwx 1 gic-huong-phynann gic-huong-phynann 10 Nov  6 08:20 rocket-soft.txt -> rocket.txt
+18752284 -rw-rw-r-- 1 gic-huong-phynann gic-huong-phynann 12 Nov  6 08:24 rocket.txt
+rocket.txt: version 480
+hard: version 404
+soft: version 480
