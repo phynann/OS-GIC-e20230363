@@ -1,0 +1,20 @@
+nvidia-settings
+yay -S nvtop
+google-chrome-stable --ozone-platform=watland
+tel
+google-chrome-stable youtube.com
+YouTube
+sudo pacman -S telegram-desktop
+sudo cp -r /usr/share/legion_linux/ /etc/legion_linux
+clea
+yay -S htop
+yay -S lenovolegionlinux-git
+yay -S lenovo-legion-linux-dkms-git legion-linux-py-git
+nano ~/.config/kitty/kitty.conf
+nvim ~/.config//kitty/kitty.conf
+yay -S nano
+google-chrome-stable
+fast fetch
+yay -S fastfetch
+neofetch
+yay -S google-chrome

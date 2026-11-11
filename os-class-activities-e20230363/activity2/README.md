@@ -32,8 +32,8 @@ history | tail -n 20 > command_used_forkchild.txt
 ```
 
 Screenshots to add:
-- `screenshots/task1_compile_run.png`
-- `screenshots/task1_process_tree.png`
+- ![task1_compile_run](screenshots/task1_compile_run.png)
+- ![task1_process_tree](screenshots/task1_process_tree.png)
 
 ### Questions
 
@@ -78,9 +78,9 @@ gcc -Wall -Wextra -o winprocess.exe winprocess.c
 If Paint is not located at `C:\Windows\System32\mspaint.exe`, update the path in `winprocess.c` to the actual executable path on your Windows installation.
 
 Screenshots to add:
-- `screenshots/task2_compile_run.png`
-- `screenshots/task2_taskmanager_tree.png`
-- `screenshots/task2_taskmanager_details.png`
+- ![task2_compile_run](screenshots/task2_compile_run.png)
+- ![task2_taskmanager_tree](screenshots/task2_taskmanager_tree.png)
+- ![task2_taskmanager_details](screenshots/task2_taskmanager_details.png)
 
 ### Questions
 
@@ -119,7 +119,7 @@ history | tail -n 20 > command_used_shm.txt
 ```
 
 Screenshots to add:
-- `screenshots/task3_compile_run.png`
+- ![task3_compile_run](screenshots/task3_compile_run.png)
 
 ### Expected consumer output
 
@@ -166,7 +166,7 @@ history | tail -n 20 > command_used_mq.txt
 ```
 
 Screenshots to add:
-- `screenshots/task4_compile_run.png`
+- ![task4_compile_run](screenshots/task4_compile_run.png)
 
 ### Expected receiver output
 
@@ -202,11 +202,4 @@ Receiver: queue unlinked.
 
 This activity demonstrates how an operating system creates processes and allows separate processes to exchange information. Linux commonly uses `fork()` followed by `exec()`, while Windows provides `CreateProcess()` to create a process and load its program in one call. Shared memory is useful for fast access to common data, while message queues provide a structured way to send individual messages. I would choose the IPC mechanism based on the data volume, synchronization needs, and how tightly the processes should be coupled.
 
-## Submission checklist
 
-- [ ] Replace any incorrect student ID in this README.
-- [ ] Run Tasks 1, 3, and 4 on Linux and save the actual `.txt` outputs and command histories.
-- [ ] Run Task 2 on Windows and record the actual PIDs.
-- [ ] Add all required screenshots to `screenshots/`.
-- [ ] Replace PID placeholders with values from your own run.
-- [ ] Commit and push the activity folder to your course repository.
