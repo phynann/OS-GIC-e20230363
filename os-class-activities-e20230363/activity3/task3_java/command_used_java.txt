@@ -1,0 +1,6 @@
+javac ThreadDemo.java
+java ThreadDemo > result_thread_demo.txt 2>&1
+javac RunnableDemo.java
+java RunnableDemo > result_runnable_demo.txt 2>&1
+javac PoolDemo.java
+java PoolDemo > result_pool_demo.txt 2>&1
